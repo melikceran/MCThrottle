@@ -11,7 +11,7 @@ google, yandex, ahrefs, moz, semrush
 Ayrıca içerisin de harici Cache özelliği de mevcuttur.
 Cache özelliğini diğer kodlarınız da kullanabilirsiniz. 
 
-Rate Limiting Kullanımı;
+#### Rate Limiting Kullanımı;
 ```
 require_once("ratelimit.php");
  
@@ -40,7 +40,7 @@ Status 429 Too Many Request
 
 
 
-CACHE kullanımı;
+#### CACHE kullanımı;
 ```
 $getTime = MCThrottle::cache(function () {
 
@@ -55,7 +55,7 @@ echo "Cache çıktısı : $getTime";
 ```
 
 
-Gerçek zamanlı bot tespiti kullanımı; (isteğe bağlı) 
+#### Gerçek zamanlı bot tespiti kullanımı; (isteğe bağlı) 
 ```
 $botDetect = MCThrottle::botDetect();
 if ($botDetect) {
@@ -67,7 +67,7 @@ if ($botDetect) {
 
 
 
-BOT izinleri ve PATH ayarları
+#### BOT izinleri ve PATH ayarları
 ratelimit.php
 ```
 class MCThrottle
