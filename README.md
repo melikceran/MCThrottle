@@ -32,7 +32,7 @@ if ($rateLimit) {
 }
 ```
 
-Browser Limit bilgisi  
+#### Browser Limit bilgisi  
 ![alt text](/rate1.png?raw=true)
 
 Status 429 Too Many Request  
