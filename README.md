@@ -36,3 +36,23 @@ $getTime = MCThrottle::cache(function () {
 
 echo "Cache çıktısı : $getTime";
 ```
+
+BOT izinleri ve PATH ayarları
+ratelimit.php
+```
+class MCThrottle
+{
+    /*
+    *   Cache klasörü yolu değişkene atanıyor
+    *   Burayı kendinize göre düzenleyin
+    *   Sitenizin root yolunda /caches/ klasörü otomatik oluşturacaktır (yazma izniniz varsa)
+    */
+    private static $PATH = __DIR__ . "/caches/";
+    // private static $PATH = $_SERVER['DOCUMENT_ROOT'] . "/caches/";
+ 
+    /*
+     *  Rate limitsiz izin verilen botlar
+    */
+    private static $ACCEPT_BOTS = ["google.com","googlebot.com","yandex.com","yandex.ru","ahrefs.com","moz.com","semrush.com"];
+```
+
