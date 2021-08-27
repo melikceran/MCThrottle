@@ -54,6 +54,19 @@ $getTime = MCThrottle::cache(function () {
 echo "Cache çıktısı : $getTime";
 ```
 
+
+Gerçek zamanlı bot tespiti kullanımı;  
+```
+$botDetect = MCThrottle::botDetect();
+if ($botDetect) {
+ echo "Bu izin verdiğimiz bir bottur.";
+} else {
+ echo "Bu limitsiz erişim yapamaz.";
+}
+```
+
+
+
 BOT izinleri ve PATH ayarları
 ratelimit.php
 ```
