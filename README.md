@@ -15,7 +15,7 @@ Rate Limiting Kullanımı;
 ```
 require_once("ratelimit.php");
  
-$rateLimit = MceranThrottle::rateLimit(function() {
+$rateLimit = MCThrottle::rateLimit(function() {
     // Limit dolarsa döndürülecek içerik
     return "Too Many Request";
 }, $maxAttempts=5, $decayMinutes=1, $headerDisplay=true);
@@ -23,7 +23,7 @@ $rateLimit = MceranThrottle::rateLimit(function() {
 
 CACHE kullanımı;
 ```
-$getTime = MceranThrottle::cache(function () {
+$getTime = MCThrottle::cache(function () {
     // Buraya çalıştırılacak kodunuzu ekleyip, return ile sonucu döndürün
     $time = time();
     return $time;
