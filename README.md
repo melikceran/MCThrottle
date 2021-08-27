@@ -21,6 +21,10 @@ $rateLimit = MCThrottle::rateLimit(function() {
     return "Too Many Request";
     
 }, $maxAttempts=5, $decayMinutes=1, $headerDisplay=true);
+
+// $maxAttempts=5 ---> kaç istekte bulunabilir
+// $decayMinutes=1 ---> istek limitlerinin zaman aşımı süresi
+// $headerDisplay=true  ---> browser'a limit bilgisi gönderilsin mi
 ```
 
 CACHE kullanımı;
