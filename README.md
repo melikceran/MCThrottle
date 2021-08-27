@@ -1,6 +1,6 @@
 # MCThrottle
 
-Scriptlerinize Rate limiting ve Caching özelliği kazandırır.
+Scriptlerinize Rate limiting ve Cache özelliği kazandırır.
 
 Ayrıca arama motoru botlarını, gerçek zamanlı olarak, ip adreslerinden sorgular ve sahte botları tespit eder. Gerçek botlara ise limitsiz erişim iznini de verir.
 Her zaman gerçek zamanlı sorgulama yapmaması için Cache özelliği de ekledim. Böylece ip bir kez sorgulanır ve kaydedilir. Bir daha gerçek zamanlı sorgulanmasına gerek kalmaz.
