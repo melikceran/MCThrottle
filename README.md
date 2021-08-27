@@ -25,6 +25,11 @@ $rateLimit = MCThrottle::rateLimit(function() {
 // $maxAttempts=5 ---> kaç istekte bulunabilir
 // $decayMinutes=1 ---> istek limitlerinin zaman aşımı süresi
 // $headerDisplay=true  ---> browser'a limit bilgisi gönderilsin mi
+
+if ($rateLimit) {
+    print_r($rateLimit);
+    exit();
+}
 ```
 
 Browser Limit bilgisi  
