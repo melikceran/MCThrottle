@@ -45,6 +45,7 @@ Status 429 Too Many Request
 $getTime = MCThrottle::cache(function () {
 
     // Buraya çalıştırılacak kodunuzu ekleyip, return ile sonucu döndürün
+    // Veritabanı sorgularınız vs. her şey olabilir. Sonucu return ile döndürün yeter.
     $time = time();
     
     return $time;
