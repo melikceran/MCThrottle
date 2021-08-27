@@ -61,7 +61,7 @@ $botDetect = MCThrottle::botDetect();
 if ($botDetect) {
  echo "Bu izin verdiğimiz bir bottur.";
 } else {
- echo "Bu limitsiz erişim yapamaz.";
+ echo "Bu ziyaretçi ve diğerleri...";
 }
 ```
 
