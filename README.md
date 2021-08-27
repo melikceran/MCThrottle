@@ -55,7 +55,7 @@ echo "Cache çıktısı : $getTime";
 ```
 
 
-Gerçek zamanlı bot tespiti kullanımı;  
+Gerçek zamanlı bot tespiti kullanımı; (isteğe bağlı) 
 ```
 $botDetect = MCThrottle::botDetect();
 if ($botDetect) {
