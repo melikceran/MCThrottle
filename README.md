@@ -46,7 +46,7 @@ $getTime = MCThrottle::cache(function () {
     
     return $time;
     
-}, "cache-file-name", $EXPIRED_TIME = 10); // 10 dakika cache süre dolunca yeniden istek çalışır
+}, "cache-file-name", $EXPIRED_TIME = 10); // After 10 minutes of cache time expires, the request runs again
 
 echo "Cache output : $getTime";
 ```
