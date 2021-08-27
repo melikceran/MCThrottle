@@ -27,6 +27,14 @@ $rateLimit = MCThrottle::rateLimit(function() {
 // $headerDisplay=true  ---> browser'a limit bilgisi gönderilsin mi
 ```
 
+Browser Limit bilgisi
+![alt text](/rate1.png?raw=true)
+
+Status 429 Too Many Request
+![alt text](/rate2.png?raw=true)
+
+
+
 CACHE kullanımı;
 ```
 $getTime = MCThrottle::cache(function () {
