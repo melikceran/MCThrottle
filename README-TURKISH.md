@@ -10,7 +10,7 @@ Ayrıca içerisin de harici Cache özelliği de mevcuttur.
 Cache özelliğini diğer kodlarınız da kullanabilirsiniz. 
 
 #### Rate Limiting Kullanımı;
-```
+```php
 require_once("ratelimit.php");
  
 $rateLimit = MCThrottle::rateLimit(function() {
@@ -39,7 +39,7 @@ Status 429 Too Many Request
 
 
 #### CACHE kullanımı;
-```
+```php
 $getTime = MCThrottle::cache(function () {
 
     // Buraya çalıştırılacak kodunuzu ekleyip, return ile sonucu döndürün
@@ -55,7 +55,7 @@ echo "Cache çıktısı : $getTime";
 
 
 #### Gerçek zamanlı bot tespiti kullanımı; (isteğe bağlı) 
-```
+```php
 $botDetect = MCThrottle::botDetect();
 if ($botDetect) {
  echo "Bu izin verdiğimiz bir bottur.";
@@ -68,7 +68,7 @@ if ($botDetect) {
 
 #### BOT izinleri ve PATH ayarları
 ratelimit.php
-```
+```php
 class MCThrottle
 {
     /*
