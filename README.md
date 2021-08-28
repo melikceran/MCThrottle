@@ -10,7 +10,7 @@ Allowed bots; google, yandex, ahrefs, moz, semrush
 It also has an external cache feature. You can also use the cache feature in your other codes.
 
 #### Use of Rate Limiting;
-```
+```php
 require_once("ratelimit.php");
  
 $rateLimit = MCThrottle::rateLimit(function() {
@@ -37,7 +37,7 @@ if ($rateLimit) {
 ![alt text](/rate2.png?raw=true)
 
 #### Use of CACHE;
-```
+```php
 $getTime = MCThrottle::cache(function () {
 
     // Add your code to be executed here and return the result
@@ -52,7 +52,7 @@ echo "Cache output : $getTime";
 ```
 
 #### Use of real-time bot detection; (optional)
-```
+```php
 $botDetect = MCThrottle::botDetect();
 if ($botDetect) {
  echo "This is a bot we allow.";
@@ -63,7 +63,7 @@ if ($botDetect) {
 
 #### Search engine bot permissions and PATH settings
 ratelimit.php
-```
+```php
 class MCThrottle
 {
      /*
