@@ -1,7 +1,7 @@
 # MCThrottle
 
 
-It gives your website Speed limiting and Cache features.
+It gives your website Rate Limiting and Cache features.
 
 It also queries search engine bots from ip addresses in real time and detects fake bots. It also provides unlimited access to real bots. I've also added the Cache feature so it doesn't always query in real time. So the ip is queried once and saved.
 
